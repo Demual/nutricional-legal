@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comer sin sustos · Política de privacidad</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #191c1c; background: #f4fbfa;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #dee4e3; background: #0e1413; }
+    td, th { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #00696b; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #4cd9dc; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #00696b; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidad</h1>
+<p class="fecha">Aplicación <strong>Comer sin sustos</strong> (<code>com.jrsoft.nutricional</code>) · Última actualización: 17 de septiembre de 2026</p>
+
+<div class="clave">
+<p><strong>En una frase:</strong> esta aplicación no tiene cuentas de usuario y
+<strong>tus alergias no salen de tu teléfono</strong>. No se envían a ningún
+servidor, ni a la publicidad, ni a ninguna analítica.</p>
+</div>
+
+<h2>Quién es el responsable</h2>
+<p>El responsable del tratamiento es <strong>JR Soft</strong>, nombre comercial de <strong>Javier Román Sáez</strong>, desarrollador de la aplicación. Puedes contactar en <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>Lo que esta aplicación NO hace</h2>
+<ul>
+  <li>No hay registro, cuenta, usuario ni contraseña. Nunca se te pide un correo, un teléfono ni un nombre.</li>
+  <li>No se usa ninguna herramienta de analítica ni de estadísticas de uso. No hay Google Analytics, ni Firebase Analytics, ni informes de fallos.</li>
+  <li>No se venden, alquilan ni ceden datos a terceros con fines comerciales.</li>
+  <li><strong>Las alergias, intolerancias y dietas que marcas no se envían a ningún sitio.</strong> Son datos de salud y se quedan en el almacenamiento privado de la aplicación. El servidor de Open Food Facts recibe el código de barras que consultas, pero no sabe qué evitas ni qué veredicto te ha salido: el análisis se hace entero dentro del teléfono.</li>
+  <li><strong>No se sube ninguna fotografía.</strong> La cámara se usa para leer el código de barras y, si lo pides, el texto de la lista de ingredientes de una foto de la etiqueta. Las dos lecturas ocurren dentro del móvil, con una biblioteca incluida en la propia aplicación que funciona sin conexión. Las imágenes no se guardan ni se transmiten.</li>
+  <li>No se pide permiso de ubicación. La aplicación no sabe dónde estás.</li>
+</ul>
+
+<h2>Datos que se quedan solo en tu teléfono</h2>
+<p>Esta información se guarda en el almacenamiento privado de la app y no sale de ella. Desaparece por completo si desinstalas la aplicación o borras sus datos desde los ajustes de Android.</p>
+<ul>
+  <li><strong>Tu perfil de alergias</strong>: qué alérgenos, intolerancias o dietas has marcado y si quieres que se te avise también de las trazas.</li>
+  <li>El <strong>historial</strong> de productos consultados y tus <strong>favoritos</strong>.</li>
+  <li>Una <strong>copia de las fichas</strong> que ya has consultado, para que la aplicación funcione sin conexión.</li>
+  <li>Tus ajustes: tema, idioma y vibración.</li>
+  <li>Que has aceptado el aviso legal del primer arranque.</li>
+</ul>
+
+<h2>Datos que sí salen del teléfono</h2>
+
+<h3>El código de barras que consultas</h3>
+<p>Para traer la ficha de un producto, la aplicación pide ese código a la API pública de <strong>Open Food Facts</strong>. En la petición viajan el código del producto, el idioma y un identificador de la aplicación y su versión (el <em>User-Agent</em> que esa API exige a todos sus clientes). No viaja ningún dato tuyo ni ningún identificador de tu dispositivo.</p>
+
+<h3>Dirección IP</h3>
+<p>Como en cualquier aplicación que se conecta a internet, los servidores con los que habla la app reciben tu dirección IP. Ocurre con Open Food Facts (fichas de producto, búsquedas e imágenes) y con Google (publicidad y, si está configurada, la configuración remota). Esta aplicación no tiene servidores propios y no guarda ningún registro.</p>
+
+<h3>Identificador de publicidad</h3>
+<p>La aplicación incluye el SDK de publicidad de Google (AdMob) y, por tanto, declara el permiso <code>com.google.android.gms.permission.AD_ID</code>, que da acceso al identificador de publicidad de Android. Este identificador es reiniciable y borrable desde <em>Ajustes de Android → Google → Anuncios</em>.</p>
+<p>En los países del Espacio Económico Europeo y el Reino Unido, la aplicación muestra el formulario de consentimiento de Google (UMP) antes de servir publicidad personalizada. Puedes cambiar tu elección cuando quieras desde Ajustes → Privacidad de los anuncios.</p>
+<p><strong>Tus alergias nunca llegan a la publicidad.</strong> La petición de anuncio sale sin ningún dato del perfil, del producto escaneado ni del veredicto. Si rechazas el consentimiento, verás publicidad no personalizada y la aplicación funcionará exactamente igual: no hay ninguna función bloqueada.</p>
+
+<h2>Terceros implicados</h2>
+<table>
+  <tr><th>Servicio</th><th>Para qué</th><th>Su política</th></tr>
+  <tr>
+    <td>Open Food Facts</td>
+    <td>Fichas de producto, búsquedas e imágenes</td>
+    <td><a href="https://world.openfoodfacts.org/privacy">world.openfoodfacts.org/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Publicidad y formulario de consentimiento</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Firebase Remote Config</td>
+    <td>Ajustar los huecos de publicidad sin publicar una versión nueva (opcional)</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
+  </tr>
+</table>
+<p>Los datos de producto proceden de Open Food Facts y se publican con licencia <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>. Esta aplicación no está afiliada a Open Food Facts.</p>
+
+<h2>Base legal y conservación</h2>
+<p>Los datos de salud que marcas se tratan <strong>únicamente en tu dispositivo</strong> y bajo tu control: no hay comunicación a terceros y no existe ninguna copia en poder del responsable. En el caso de la publicidad personalizada, la base legal es tu <strong>consentimiento</strong>, recogido mediante el formulario de Google (UMP) y revocable en cualquier momento desde los ajustes de la aplicación.</p>
+<p>Todo lo que guarda la aplicación permanece hasta que la desinstales o borres sus datos.</p>
+
+<h2>Tus derechos</h2>
+<p>Si resides en la Unión Europea, el RGPD te reconoce los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición. En la práctica, y dado que esta aplicación no guarda ningún dato asociado a tu persona:</p>
+<ul>
+  <li><strong>Supresión:</strong> desinstalar la aplicación, o borrar sus datos desde los ajustes de Android, elimina todo. También puedes desmarcar tus alergias o vaciar el historial desde la propia app.</li>
+  <li><strong>Oposición y retirada del consentimiento:</strong> Ajustes → Privacidad de los anuncios.</li>
+  <li><strong>Acceso:</strong> puedes escribir a la dirección de contacto. Ten en cuenta que, al no existir cuentas ni identificadores de usuario, no hay ningún dato «tuyo» que localizar fuera de tu teléfono.</li>
+</ul>
+<p>También puedes reclamar ante la autoridad de control de tu país. En España es la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2>Menores</h2>
+<p>Esta aplicación no está dirigida a menores de 13 años y no recoge conscientemente datos de ellos.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si esta política cambia de forma sustancial, se publicará la versión nueva en esta misma dirección con una fecha de actualización distinta.</p>
+
+<h2>Advertencia importante sobre el servicio</h2>
+<p>Esta aplicación <strong>no es un producto sanitario</strong>. No diagnostica nada ni sustituye el consejo de tu médico o de tu alergólogo. La información procede de una base de datos colaborativa que puede estar incompleta, desactualizada o equivocada, y los fabricantes cambian las recetas sin previo aviso: <strong>comprueba siempre la etiqueta del envase</strong>. Ante una reacción grave, llama al 112.</p>
+
+<footer>
+<p>Comer sin sustos · JR Soft (Javier Román Sáez) · <code>com.jrsoft.nutricional</code> · Contacto: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+</body>
+</html>
