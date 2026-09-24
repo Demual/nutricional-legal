@@ -31,7 +31,7 @@
 <body>
 
 <h1>Política de privacidad</h1>
-<p class="fecha">Aplicación <strong>Comer sin sustos</strong> (<code>com.jrsoft.nutricional</code>) · Última actualización: 17 de septiembre de 2026</p>
+<p class="fecha">Aplicación <strong>Comer sin sustos</strong> (<code>com.jrsoft.nutricional</code>) · Última actualización: 24 de septiembre de 2026</p>
 
 <div class="clave">
 <p><strong>En una frase:</strong> esta aplicación no tiene cuentas de usuario y
@@ -45,11 +45,11 @@ servidor, ni a la publicidad, ni a ninguna analítica.</p>
 <h2>Lo que esta aplicación NO hace</h2>
 <ul>
   <li>No hay registro, cuenta, usuario ni contraseña. Nunca se te pide un correo, un teléfono ni un nombre.</li>
-  <li>No se usa ninguna herramienta de analítica ni de estadísticas de uso. No hay Google Analytics, ni Firebase Analytics, ni informes de fallos.</li>
+  <li>No hay ninguna herramienta de analítica propia: ni Google Analytics, ni Firebase Analytics, ni informes de fallos. Las dos bibliotecas de Google que sí lleva, la de la publicidad y la que lee códigos y etiquetas, envían a Google sus propios datos técnicos; qué datos y para qué, más abajo, en «Datos que sí salen del teléfono».</li>
   <li>No se venden, alquilan ni ceden datos a terceros con fines comerciales.</li>
   <li><strong>Las alergias, intolerancias y dietas que marcas no se envían a ningún sitio.</strong> Son datos de salud y se quedan en el almacenamiento privado de la aplicación. El servidor de Open Food Facts recibe el código de barras que consultas, pero no sabe qué evitas ni qué veredicto te ha salido: el análisis se hace entero dentro del teléfono.</li>
   <li><strong>No se sube ninguna fotografía.</strong> La cámara se usa para leer el código de barras y, si lo pides, el texto de la lista de ingredientes de una foto de la etiqueta. Las dos lecturas ocurren dentro del móvil, con una biblioteca incluida en la propia aplicación que funciona sin conexión. Las imágenes no se guardan ni se transmiten.</li>
-  <li>No se pide permiso de ubicación. La aplicación no sabe dónde estás.</li>
+  <li>No se pide permiso de ubicación, y la aplicación no usa el GPS ni sabe dónde estás. Lo más parecido es que Google estima una zona aproximada a partir de tu dirección IP para la publicidad; se explica abajo.</li>
 </ul>
 
 <h2>Datos que se quedan solo en tu teléfono</h2>
@@ -64,16 +64,21 @@ servidor, ni a la publicidad, ni a ninguna analítica.</p>
 
 <h2>Datos que sí salen del teléfono</h2>
 
-<h3>El código de barras que consultas</h3>
-<p>Para traer la ficha de un producto, la aplicación pide ese código a la API pública de <strong>Open Food Facts</strong>. En la petición viajan el código del producto, el idioma y un identificador de la aplicación y su versión (el <em>User-Agent</em> que esa API exige a todos sus clientes). No viaja ningún dato tuyo ni ningún identificador de tu dispositivo.</p>
+<h3>Lo que consultas en Open Food Facts</h3>
+<p>Para traer la ficha de un producto, la aplicación pide su código de barras a la API pública de <strong>Open Food Facts</strong>, y lo mismo hace con el texto que escribes en «Buscar». En la petición viajan el código o el texto buscado, el idioma y un identificador de la aplicación y su versión (el <em>User-Agent</em> que esa API exige a todos sus clientes). No viaja ningún dato tuyo ni ningún identificador de tu dispositivo.</p>
 
 <h3>Dirección IP</h3>
-<p>Como en cualquier aplicación que se conecta a internet, los servidores con los que habla la app reciben tu dirección IP. Ocurre con Open Food Facts (fichas de producto, búsquedas e imágenes) y con Google (publicidad y, si está configurada, la configuración remota). Esta aplicación no tiene servidores propios y no guarda ningún registro.</p>
+<p>Como en cualquier aplicación que se conecta a internet, los servidores con los que habla la app reciben tu dirección IP. Ocurre con Open Food Facts (fichas de producto, búsquedas e imágenes) y con Google (publicidad, lectura de códigos y etiquetas y, si está configurada, la configuración remota). Esta aplicación no tiene servidores propios y no guarda ningún registro.</p>
+<p>Google puede usar esa IP para estimar una <strong>ubicación aproximada</strong>, del orden de una ciudad o una región, con la que elegir y medir los anuncios y prevenir fraudes. Es la única ubicación que interviene, y la aplicación ni la conoce ni la usa.</p>
 
-<h3>Identificador de publicidad</h3>
+<h3>Publicidad: Google AdMob</h3>
 <p>La aplicación incluye el SDK de publicidad de Google (AdMob) y, por tanto, declara el permiso <code>com.google.android.gms.permission.AD_ID</code>, que da acceso al identificador de publicidad de Android. Este identificador es reiniciable y borrable desde <em>Ajustes de Android → Google → Anuncios</em>.</p>
+<p>Además del identificador de publicidad, el SDK de AdMob recoge el identificador del conjunto de aplicaciones (<em>app set ID</em>), las interacciones con la aplicación y con los anuncios (cuándo se abre la app, los toques y las reproducciones de vídeo) y datos de diagnóstico (tiempo de arranque, bloqueos y consumo de energía). Google los usa para servir y medir la publicidad, para estadísticas y para prevenir fraudes, según su propia política, enlazada en «Terceros implicados».</p>
 <p>En los países del Espacio Económico Europeo y el Reino Unido, la aplicación muestra el formulario de consentimiento de Google (UMP) antes de servir publicidad personalizada. Puedes cambiar tu elección cuando quieras desde Ajustes → Privacidad de los anuncios.</p>
 <p><strong>Tus alergias nunca llegan a la publicidad.</strong> La petición de anuncio sale sin ningún dato del perfil, del producto escaneado ni del veredicto. Si rechazas el consentimiento, verás publicidad no personalizada y la aplicación funcionará exactamente igual: no hay ninguna función bloqueada.</p>
+
+<h3>Lectura de códigos y etiquetas: Google ML Kit</h3>
+<p>El lector del código de barras y el de la lista de ingredientes funcionan dentro del teléfono con <strong>ML Kit</strong>, una biblioteca de Google incluida en la aplicación. <strong>Ni las imágenes ni el texto leído salen del teléfono.</strong> Lo que ML Kit sí envía a Google son datos técnicos de su funcionamiento: marca, modelo y versión del sistema del teléfono, versión de la aplicación, un identificador aleatorio de la instalación (que, según Google, no está pensado para identificarte a ti ni a tu teléfono), tiempos de respuesta y códigos de error. Google los usa para diagnosticar y mejorar esa biblioteca, y declara que no los cede a terceros.</p>
 
 <h2>Terceros implicados</h2>
 <table>
@@ -87,6 +92,11 @@ servidor, ni a la publicidad, ni a ninguna analítica.</p>
     <td>Google AdMob</td>
     <td>Publicidad y formulario de consentimiento</td>
     <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google ML Kit</td>
+    <td>Leer el código de barras y el texto de las etiquetas dentro del teléfono; solo envía datos técnicos de su funcionamiento</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
   </tr>
   <tr>
     <td>Google Firebase Remote Config</td>
@@ -103,9 +113,9 @@ servidor, ni a la publicidad, ni a ninguna analítica.</p>
 <h2>Tus derechos</h2>
 <p>Si resides en la Unión Europea, el RGPD te reconoce los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición. En la práctica, y dado que esta aplicación no guarda ningún dato asociado a tu persona:</p>
 <ul>
-  <li><strong>Supresión:</strong> desinstalar la aplicación, o borrar sus datos desde los ajustes de Android, elimina todo. También puedes desmarcar tus alergias o vaciar el historial desde la propia app.</li>
+  <li><strong>Supresión:</strong> desinstalar la aplicación, o borrar sus datos desde los ajustes de Android, elimina todo lo que guarda. También puedes desmarcar tus alergias o vaciar el historial desde la propia app. El identificador de publicidad se reinicia o se borra desde <em>Ajustes de Android → Google → Anuncios</em>.</li>
   <li><strong>Oposición y retirada del consentimiento:</strong> Ajustes → Privacidad de los anuncios.</li>
-  <li><strong>Acceso:</strong> puedes escribir a la dirección de contacto. Ten en cuenta que, al no existir cuentas ni identificadores de usuario, no hay ningún dato «tuyo» que localizar fuera de tu teléfono.</li>
+  <li><strong>Acceso:</strong> puedes escribir a la dirección de contacto. Ten en cuenta que, al no existir cuentas ni identificadores de usuario, el responsable no tiene ningún dato «tuyo» que localizar fuera de tu teléfono. Los datos que recogen las bibliotecas de Google los gestiona Google, y los derechos sobre ellos se ejercen ante Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
 </ul>
 <p>También puedes reclamar ante la autoridad de control de tu país. En España es la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 

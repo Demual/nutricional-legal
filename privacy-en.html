@@ -31,7 +31,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="fecha"><strong>Comer sin sustos</strong> app (<code>com.jrsoft.nutricional</code>) · Last updated: 17 September 2026</p>
+<p class="fecha"><strong>Comer sin sustos</strong> app (<code>com.jrsoft.nutricional</code>) · Last updated: 24 September 2026</p>
 
 <div class="clave">
 <p><strong>In one sentence:</strong> this app has no user accounts and
@@ -45,11 +45,11 @@ server, to advertising, or to any analytics.</p>
 <h2>What this app does NOT do</h2>
 <ul>
   <li>There is no sign-up, account, username or password. You are never asked for an email address, a phone number or a name.</li>
-  <li>No analytics or usage-statistics tool is used. There is no Google Analytics, no Firebase Analytics and no crash reporting.</li>
+  <li>The app has no analytics tool of its own: no Google Analytics, no Firebase Analytics and no crash reporting. The two Google libraries it does include, the one for ads and the one that reads barcodes and labels, send Google their own technical data; which data and what for is explained below, under "Data that does leave your phone".</li>
   <li>No data is sold, rented or handed to third parties for commercial purposes.</li>
   <li><strong>The allergies, intolerances and diets you tick are never sent anywhere.</strong> They are health data and they stay in the app's private storage. The Open Food Facts server receives the barcode you look up, but it does not know what you avoid or what verdict you got: the whole analysis runs on your phone.</li>
   <li><strong>No photograph is uploaded.</strong> The camera is used to read the barcode and, if you ask for it, the text of the ingredient list from a photo of the label. Both readings happen on the device, with a library bundled into the app that works offline. Images are neither stored nor transmitted.</li>
-  <li>No location permission is requested. The app does not know where you are.</li>
+  <li>No location permission is requested, and the app does not use GPS or know where you are. The closest thing is that Google estimates an approximate area from your IP address for advertising; see below.</li>
 </ul>
 
 <h2>Data that stays only on your phone</h2>
@@ -64,16 +64,21 @@ server, to advertising, or to any analytics.</p>
 
 <h2>Data that does leave your phone</h2>
 
-<h3>The barcode you look up</h3>
-<p>To fetch a product record, the app requests that code from the public <strong>Open Food Facts</strong> API. The request carries the product code, the language and an identifier of the app and its version (the <em>User-Agent</em> that API requires from all its clients). No data about you and no device identifier is sent.</p>
+<h3>What you look up on Open Food Facts</h3>
+<p>To fetch a product record, the app requests its barcode from the public <strong>Open Food Facts</strong> API, and it does the same with the text you type in "Search". The request carries the code or the search text, the language and an identifier of the app and its version (the <em>User-Agent</em> that API requires from all its clients). No data about you and no device identifier is sent.</p>
 
 <h3>IP address</h3>
-<p>As with any app that connects to the internet, the servers the app talks to receive your IP address. This happens with Open Food Facts (product records, searches and images) and with Google (advertising and, if configured, remote configuration). This app has no servers of its own and keeps no logs.</p>
+<p>As with any app that connects to the internet, the servers the app talks to receive your IP address. This happens with Open Food Facts (product records, searches and images) and with Google (advertising, barcode and label reading and, if configured, remote configuration). This app has no servers of its own and keeps no logs.</p>
+<p>Google may use that IP address to estimate an <strong>approximate location</strong>, roughly a city or a region, to choose and measure ads and to prevent fraud. That is the only location involved, and the app neither knows it nor uses it.</p>
 
-<h3>Advertising identifier</h3>
+<h3>Advertising: Google AdMob</h3>
 <p>The app includes Google's advertising SDK (AdMob) and therefore declares the <code>com.google.android.gms.permission.AD_ID</code> permission, which grants access to the Android advertising identifier. That identifier can be reset or deleted from <em>Android Settings → Google → Ads</em>.</p>
+<p>Besides the advertising identifier, the AdMob SDK collects the app set ID, interactions with the app and with the ads (when the app is opened, taps and video views) and diagnostic data (launch time, hangs and energy use). Google uses them to serve and measure ads, for statistics and to prevent fraud, under its own policy, linked under "Third parties involved".</p>
 <p>In the European Economic Area and the United Kingdom, the app shows Google's consent form (UMP) before serving personalised advertising. You can change your choice at any time from Settings → Ad privacy.</p>
 <p><strong>Your allergies never reach advertising.</strong> The ad request goes out without any data from your profile, the scanned product or the verdict. If you decline consent, you will see non-personalised ads and the app will work exactly the same: no feature is locked.</p>
+
+<h3>Reading barcodes and labels: Google ML Kit</h3>
+<p>The barcode reader and the ingredient-list reader run on the phone with <strong>ML Kit</strong>, a Google library bundled into the app. <strong>Neither the images nor the text that is read ever leave the phone.</strong> What ML Kit does send to Google is technical data about how it runs: the phone's make, model and OS version, the app version, a random per-installation identifier (which, according to Google, is not meant to identify you or your phone), response times and error codes. Google uses it to diagnose and improve that library, and states that it does not pass it on to third parties.</p>
 
 <h2>Third parties involved</h2>
 <table>
@@ -87,6 +92,11 @@ server, to advertising, or to any analytics.</p>
     <td>Google AdMob</td>
     <td>Advertising and the consent form</td>
     <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google ML Kit</td>
+    <td>Reading the barcode and the label text on the phone; it only sends technical data about how it runs</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
   </tr>
   <tr>
     <td>Google Firebase Remote Config</td>
@@ -103,9 +113,9 @@ server, to advertising, or to any analytics.</p>
 <h2>Your rights</h2>
 <p>If you live in the European Union, the GDPR grants you rights of access, rectification, erasure, restriction, portability and objection. In practice, and given that this app stores no data associated with you:</p>
 <ul>
-  <li><strong>Erasure:</strong> uninstalling the app, or clearing its data from the Android settings, removes everything. You can also untick your allergies or clear the history from within the app.</li>
+  <li><strong>Erasure:</strong> uninstalling the app, or clearing its data from the Android settings, removes everything it stores. You can also untick your allergies or clear the history from within the app. The advertising identifier can be reset or deleted from <em>Android Settings → Google → Ads</em>.</li>
   <li><strong>Objection and withdrawal of consent:</strong> Settings → Ad privacy.</li>
-  <li><strong>Access:</strong> you can write to the contact address. Bear in mind that, since there are no accounts or user identifiers, there is no data "of yours" to locate outside your phone.</li>
+  <li><strong>Access:</strong> you can write to the contact address. Bear in mind that, since there are no accounts or user identifiers, the controller holds no data "of yours" to locate outside your phone. The data collected by Google's libraries is managed by Google, and the rights over it are exercised with Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
 </ul>
 <p>You may also lodge a complaint with your country's supervisory authority. In Spain that is the <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 
