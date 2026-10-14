@@ -53,8 +53,7 @@ servidor, ni a la publicidad, ni a ninguna analítica.</p>
 </ul>
 
 <h2>Datos que se quedan solo en tu teléfono</h2>
-<p>Esta información se guarda en el almacenamiento privado de la app y no sale de ella. Desaparece por completo si desinstalas la aplicación o borras sus datos desde los ajustes de Android.</p>
-<p><strong>Copia de seguridad de Android.</strong> Desde la versión 1.1.0, la aplicación no deja que la copia de seguridad automática de Android suba estos datos a tu cuenta de Google. Si cambias de móvil con la herramienta de traspaso de Android (por cable o en tu red), sí pueden pasar directamente del teléfono viejo al nuevo, sin pasar por ningún servidor.</p>
+<p>Esta información está solo en el almacenamiento privado de la app (el país de la SIM ni siquiera se guarda) y no sale de ella, salvo en el traspaso a un móvil nuevo que se explica después de la lista. Desaparece por completo si desinstalas la aplicación o borras sus datos desde los ajustes de Android.</p>
 <ul>
   <li><strong>Tu perfil de alergias</strong>: qué alérgenos, intolerancias o dietas has marcado y si quieres que se te avise también de las trazas.</li>
   <li>El <strong>historial</strong> de productos consultados y tus <strong>favoritos</strong>.</li>
@@ -63,6 +62,7 @@ servidor, ni a la publicidad, ni a ninguna analítica.</p>
   <li>Que has aceptado el aviso legal del primer arranque.</li>
   <li>El <strong>país de tu tarjeta SIM</strong> (o, si no hay, el de la región del sistema), que la pantalla «Más apps de JR Soft» consulta en el momento para enseñar solo las apps disponibles en tu país. No se guarda ni se envía. Los enlaces a Google Play de esa pantalla llevan una etiqueta que dice que vienen de Comer sin sustos, sin ningún dato tuyo.</li>
 </ul>
+<p><strong>Copia de seguridad de Android.</strong> Desde la versión 1.1.0, la aplicación no deja que la copia de seguridad automática de Android suba estos datos a tu cuenta de Google. Si cambias de móvil con la herramienta de traspaso de Android (por cable o en tu red), sí pueden pasar directamente del teléfono viejo al nuevo, sin pasar por ningún servidor. La versión 1.0.0, que solo llegó a la prueba cerrada, sí la permitía: esa copia, si existe, es tuya, la gestiona Google y se borra desde los ajustes de Android o de tu cuenta de Google.</p>
 
 <h2>Datos que sí salen del teléfono</h2>
 
@@ -76,7 +76,8 @@ servidor, ni a la publicidad, ni a ninguna analítica.</p>
 <h3>Publicidad: Google AdMob</h3>
 <p>La aplicación incluye el SDK de publicidad de Google (AdMob) y, por tanto, declara el permiso <code>com.google.android.gms.permission.AD_ID</code>, que da acceso al identificador de publicidad de Android. Este identificador es reiniciable y borrable desde <em>Ajustes de Android → Google → Anuncios</em>.</p>
 <p>Además del identificador de publicidad, el SDK de AdMob recoge el identificador del conjunto de aplicaciones (<em>app set ID</em>), las interacciones con la aplicación y con los anuncios (cuándo se abre la app, los toques y las reproducciones de vídeo) y datos de diagnóstico (tiempo de arranque, bloqueos y consumo de energía). Google los usa para servir y medir la publicidad, para estadísticas y para prevenir fraudes, según su propia política, enlazada en «Terceros implicados».</p>
-<p>En los países del Espacio Económico Europeo, el Reino Unido y Suiza, la aplicación muestra el formulario de consentimiento de Google (UMP) antes de servir publicidad personalizada. Puedes cambiar tu elección cuando quieras desde Ajustes → Privacidad de los anuncios.</p>
+<p>En los países del Espacio Económico Europeo, el Reino Unido y Suiza, la aplicación muestra el formulario de consentimiento de Google (UMP) antes de servir publicidad personalizada. Puedes cambiar tu elección cuando quieras desde Más → Privacidad de los anuncios.</p>
+<p>El mensaje de consentimiento de los anuncios lo muestra Google con un texto común a todos sus socios publicitarios, y por eso menciona la geolocalización precisa. Según Google, su SDK de anuncios solo usa la ubicación aproximada que se deduce de la dirección IP, y esta app no le pasa la ubicación del GPS. Puedes rechazar ese uso en «Gestionar opciones».</p>
 <p><strong>Tus alergias nunca llegan a la publicidad.</strong> La petición de anuncio sale sin ningún dato del perfil, del producto escaneado ni del veredicto. Si rechazas el consentimiento, verás publicidad no personalizada y la aplicación funcionará exactamente igual: no hay ninguna función bloqueada.</p>
 
 <h3>Lectura de códigos y etiquetas: Google ML Kit</h3>
@@ -109,7 +110,7 @@ servidor, ni a la publicidad, ni a ninguna analítica.</p>
 <p>Los datos de producto proceden de Open Food Facts y se publican con licencia <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>. Las fotos de los productos son de los colaboradores de Open Food Facts y se publican con licencia <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Esta aplicación no está afiliada a Open Food Facts.</p>
 
 <h2>Base legal y conservación</h2>
-<p>Las consultas a Open Food Facts (el código o el texto que buscas) se basan en la prestación del servicio que pides al usar la aplicación (art. 6.1.b del RGPD). Tus alergias se tratan <strong>únicamente en tu dispositivo</strong> y bajo tu control: no hay comunicación a terceros y el responsable no tiene ninguna copia. La publicidad personalizada se basa en tu <strong>consentimiento</strong>, recogido con el formulario de Google (UMP), que puedes retirar cuando quieras desde Ajustes → Privacidad de los anuncios. La publicidad no personalizada, su medición y la prevención del fraude, en el <strong>interés legítimo</strong> de financiar con anuncios una aplicación gratuita (art. 6.1.f); puedes oponerte desde el mismo sitio.</p>
+<p>Las consultas a Open Food Facts (el código o el texto que buscas) se basan en la prestación del servicio que pides al usar la aplicación (art. 6.1.b del RGPD). Tus alergias se tratan <strong>únicamente en tu dispositivo</strong> y bajo tu control: no hay comunicación a terceros y el responsable no tiene ninguna copia. La publicidad personalizada se basa en tu <strong>consentimiento</strong>, recogido con el formulario de Google (UMP), que puedes retirar cuando quieras desde Más → Privacidad de los anuncios. La publicidad no personalizada, su medición y la prevención del fraude, en el <strong>interés legítimo</strong> de financiar con anuncios una aplicación gratuita (art. 6.1.f); puedes oponerte desde el mismo sitio.</p>
 <p>Todo lo que guarda la aplicación permanece hasta que la desinstales o borres sus datos.</p>
 
 <h2>Transferencias fuera de Europa</h2>
@@ -119,7 +120,7 @@ servidor, ni a la publicidad, ni a ninguna analítica.</p>
 <p>Si resides en la Unión Europea, el RGPD te reconoce los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición. En la práctica, y dado que esta aplicación no guarda ningún dato asociado a tu persona:</p>
 <ul>
   <li><strong>Supresión:</strong> desinstalar la aplicación, o borrar sus datos desde los ajustes de Android, elimina todo lo que guarda. También puedes desmarcar tus alergias o vaciar el historial desde la propia app. El identificador de publicidad se reinicia o se borra desde <em>Ajustes de Android → Google → Anuncios</em>.</li>
-  <li><strong>Oposición y retirada del consentimiento:</strong> Ajustes → Privacidad de los anuncios.</li>
+  <li><strong>Oposición y retirada del consentimiento:</strong> Más → Privacidad de los anuncios.</li>
   <li><strong>Acceso:</strong> puedes escribir a la dirección de contacto. Ten en cuenta que, al no existir cuentas ni identificadores de usuario, el responsable no tiene ningún dato «tuyo» que localizar fuera de tu teléfono. Los datos que recogen las bibliotecas de Google los gestiona Google, y los derechos sobre ellos se ejercen ante Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
 </ul>
 <p>También puedes reclamar ante la autoridad de control de tu país. En España es la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>

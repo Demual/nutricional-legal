@@ -53,8 +53,7 @@ server, to advertising, or to any analytics.</p>
 </ul>
 
 <h2>Data that stays only on your phone</h2>
-<p>This information is kept in the app's private storage and never leaves it. It disappears completely if you uninstall the app or clear its data from the Android settings.</p>
-<p><strong>Android backup.</strong> Since version 1.1.0, the app does not let Android's automatic backup upload these data to your Google account. If you switch phones with Android's transfer tool (by cable or over your network), they can go straight from the old phone to the new one, without going through any server.</p>
+<p>This information is kept only in the app's private storage (the SIM country is not even stored) and never leaves it, except in a transfer to a new phone, explained after the list. It disappears completely if you uninstall the app or clear its data from the Android settings.</p>
 <ul>
   <li><strong>Your allergy profile</strong>: which allergens, intolerances or diets you ticked, and whether you also want to be warned about traces.</li>
   <li>The <strong>history</strong> of products you looked up and your <strong>favourites</strong>.</li>
@@ -63,6 +62,7 @@ server, to advertising, or to any analytics.</p>
   <li>The fact that you accepted the legal notice shown on first launch.</li>
   <li>The <strong>country of your SIM card</strong> (or, if there is none, that of the system region), which the «More apps by JR Soft» screen checks at that moment to show only the apps available in your country. It is neither stored nor sent. The Google Play links on that screen carry a tag saying they come from Comer sin sustos, with no data about you.</li>
 </ul>
+<p><strong>Android backup.</strong> Since version 1.1.0, the app does not let Android's automatic backup upload these data to your Google account. If you switch phones with Android's transfer tool (by cable or over your network), they can go straight from the old phone to the new one, without going through any server. Version 1.0.0, which only reached the closed test, did allow it: that backup, if any, is yours, is managed by Google and can be deleted in your Android or Google account settings.</p>
 
 <h2>Data that does leave your phone</h2>
 
@@ -76,7 +76,8 @@ server, to advertising, or to any analytics.</p>
 <h3>Advertising: Google AdMob</h3>
 <p>The app includes Google's advertising SDK (AdMob) and therefore declares the <code>com.google.android.gms.permission.AD_ID</code> permission, which grants access to the Android advertising identifier. That identifier can be reset or deleted from <em>Android Settings → Google → Ads</em>.</p>
 <p>Besides the advertising identifier, the AdMob SDK collects the app set ID, interactions with the app and with the ads (when the app is opened, taps and video views) and diagnostic data (launch time, hangs and energy use). Google uses them to serve and measure ads, for statistics and to prevent fraud, under its own policy, linked under "Third parties involved".</p>
-<p>In the European Economic Area, the United Kingdom and Switzerland, the app shows Google's consent form (UMP) before serving personalised advertising. You can change your choice at any time from Settings → Ad privacy.</p>
+<p>In the European Economic Area, the United Kingdom and Switzerland, the app shows Google's consent form (UMP) before serving personalised advertising. You can change your choice at any time from More → Ad privacy.</p>
+<p>The ad consent message is shown by Google with wording shared by all its advertising partners, which is why it mentions precise geolocation. According to Google, its ads SDK only uses the approximate location inferred from the IP address, and this app does not give it the GPS location. You can refuse that use under «Manage options».</p>
 <p><strong>Your allergies never reach advertising.</strong> The ad request goes out without any data from your profile, the scanned product or the verdict. If you decline consent, you will see non-personalised ads and the app will work exactly the same: no feature is locked.</p>
 
 <h3>Reading barcodes and labels: Google ML Kit</h3>
@@ -109,7 +110,7 @@ server, to advertising, or to any analytics.</p>
 <p>Product data comes from Open Food Facts and is published under the <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a> licence. Product photos are by Open Food Facts contributors and are published under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> licence. This app is not affiliated with Open Food Facts.</p>
 
 <h2>Legal basis and retention</h2>
-<p>Lookups on Open Food Facts (the code or text you search for) are based on providing the service you request by using the app (Art. 6(1)(b) GDPR). Your allergies are processed <strong>solely on your device</strong> and under your control: there is no disclosure to third parties and the controller holds no copy of them. Personalised advertising is based on your <strong>consent</strong>, collected through Google's form (UMP), which you can withdraw at any time from Settings → Ad privacy. Non-personalised advertising, its measurement and fraud prevention are based on the <strong>legitimate interest</strong> in funding a free app with ads (Art. 6(1)(f)); you can object from the same place.</p>
+<p>Lookups on Open Food Facts (the code or text you search for) are based on providing the service you request by using the app (Art. 6(1)(b) GDPR). Your allergies are processed <strong>solely on your device</strong> and under your control: there is no disclosure to third parties and the controller holds no copy of them. Personalised advertising is based on your <strong>consent</strong>, collected through Google's form (UMP), which you can withdraw at any time from More → Ad privacy. Non-personalised advertising, its measurement and fraud prevention are based on the <strong>legitimate interest</strong> in funding a free app with ads (Art. 6(1)(f)); you can object from the same place.</p>
 <p>Everything the app stores remains until you uninstall it or clear its data.</p>
 
 <h2>Transfers outside Europe</h2>
@@ -119,7 +120,7 @@ server, to advertising, or to any analytics.</p>
 <p>If you live in the European Union, the GDPR grants you rights of access, rectification, erasure, restriction, portability and objection. In practice, and given that this app stores no data associated with you:</p>
 <ul>
   <li><strong>Erasure:</strong> uninstalling the app, or clearing its data from the Android settings, removes everything it stores. You can also untick your allergies or clear the history from within the app. The advertising identifier can be reset or deleted from <em>Android Settings → Google → Ads</em>.</li>
-  <li><strong>Objection and withdrawal of consent:</strong> Settings → Ad privacy.</li>
+  <li><strong>Objection and withdrawal of consent:</strong> More → Ad privacy.</li>
   <li><strong>Access:</strong> you can write to the contact address. Bear in mind that, since there are no accounts or user identifiers, the controller holds no data "of yours" to locate outside your phone. The data collected by Google's libraries is managed by Google, and the rights over it are exercised with Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
 </ul>
 <p>You may also lodge a complaint with your country's supervisory authority. In Spain that is the <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
