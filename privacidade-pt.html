@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comer sin sustos · Política de privacidade</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #191c1c; background: #f4fbfa;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #dee4e3; background: #0e1413; }
+    td, th { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #00696b; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #4cd9dc; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #00696b; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidade</h1>
+<p class="fecha">Aplicação <strong>Comer sin sustos</strong> (<code>com.jrsoft.nutricional</code>) · Última atualização: 29 de outubro de 2026</p>
+
+<div class="clave">
+<p><strong>Numa frase:</strong> esta aplicação não tem contas de utilizador e
+<strong>as suas alergias não saem do telemóvel</strong>. Não são enviadas para
+nenhum servidor, nem para a publicidade, nem para nenhuma ferramenta de
+análise.</p>
+</div>
+
+<h2>Quem é o responsável</h2>
+<p>O responsável pelo tratamento é a <strong>JR Soft</strong>, nome comercial de <strong>Javier Román Sáez</strong>, programador da aplicação. Pode contactá-lo através de <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>O que esta aplicação NÃO faz</h2>
+<ul>
+  <li>Não há registo, conta, utilizador nem palavra-passe. Nunca lhe é pedido um e-mail, um telefone ou um nome.</li>
+  <li>Não há nenhuma ferramenta de análise própria: nem Google Analytics, nem Firebase Analytics, nem relatórios de erros. As duas bibliotecas da Google que a aplicação inclui, a da publicidade e a que lê códigos e rótulos, enviam à Google os seus próprios dados técnicos; que dados e para quê, mais abaixo, em «Dados que saem do telemóvel».</li>
+  <li>Não vendemos nem alugamos os seus dados. Para mostrar e medir anúncios, o SDK de anúncios da Google (AdMob) recolhe identificadores do dispositivo, como se explica nesta política. Algumas leis de privacidade dos EUA podem considerar isso «vender» ou «partilhar» dados pessoais (ver «Residentes nos EUA»).</li>
+  <li><strong>As alergias, intolerâncias e dietas que marca não são enviadas para lado nenhum.</strong> São dados de saúde e ficam no armazenamento privado da aplicação. O servidor do Open Food Facts recebe o código de barras que consulta, mas não sabe o que evita nem que resultado obteve: a análise é feita inteiramente no telemóvel.</li>
+  <li><strong>Nenhuma fotografia é enviada.</strong> A câmara serve para ler o código de barras e, se o pedir, o texto da lista de ingredientes de uma fotografia do rótulo. As duas leituras acontecem no telemóvel, com uma biblioteca incluída na própria aplicação que funciona sem ligação. As imagens não são guardadas nem transmitidas.</li>
+  <li>Não é pedida autorização de localização, e a aplicação não usa o GPS nem sabe onde está. O mais parecido é a Google estimar uma zona aproximada a partir do seu endereço IP para a publicidade; explica-se abaixo.</li>
+</ul>
+
+<h2>Dados que ficam apenas no telemóvel</h2>
+<p>Esta informação está apenas no armazenamento privado da aplicação (o país do cartão SIM nem sequer é guardado) e não sai dele, exceto na transferência para um telemóvel novo, explicada a seguir à lista. Desaparece por completo se desinstalar a aplicação ou apagar os seus dados nas definições do Android.</p>
+<ul>
+  <li><strong>O seu perfil de alergias</strong>: que alergénios, intolerâncias ou dietas marcou e se quer ser avisado também dos vestígios.</li>
+  <li>O <strong>histórico</strong> de produtos consultados e os seus <strong>favoritos</strong>.</li>
+  <li>Uma <strong>cópia das fichas</strong> já consultadas, para que a aplicação funcione sem ligação.</li>
+  <li>As suas definições: tema, idioma e vibração.</li>
+  <li>Que aceitou o aviso legal do primeiro arranque.</li>
+  <li>Os contadores que decidem quando propor que avalie a aplicação (quantas vezes a abriu, quantas consultas correram bem e a data do último pedido).</li>
+  <li>O <strong>país do seu cartão SIM</strong> (ou, se não houver, o da região do sistema), que o ecrã «Mais apps da JR Soft» consulta no momento para mostrar apenas as aplicações disponíveis no seu país. Não é guardado nem enviado. As ligações para o Google Play desse ecrã levam uma etiqueta que diz que vêm do Comer sin sustos, sem nenhum dado seu.</li>
+</ul>
+<p><strong>Cópia de segurança do Android.</strong> Desde a versão 1.1.0, a aplicação não deixa que a cópia de segurança automática do Android envie estes dados para a sua conta Google. Se mudar de telemóvel com a ferramenta de transferência do Android (por cabo ou na sua rede), podem passar diretamente do telemóvel antigo para o novo, sem passar por nenhum servidor. A versão 1.0.0, que só chegou ao teste fechado, permitia-a: essa cópia, se existir, é sua e gerida pela Google, e não se apaga sozinha ao atualizar a aplicação. Pode apagá-la em Definições do Android → Google → Cópia de segurança, ou nas cópias de segurança da sua conta Google.</p>
+
+<h2>Dados que saem do telemóvel</h2>
+
+<h3>O que consulta no Open Food Facts</h3>
+<p>Para obter a ficha de um produto, a aplicação pede o seu código de barras à API pública do <strong>Open Food Facts</strong>, e faz o mesmo com o texto que escreve em «Pesquisar». No pedido seguem o código ou o texto pesquisado, o idioma e um identificador da aplicação e da sua versão (o <em>User-Agent</em> que essa API exige a todos os seus clientes). Não segue nenhum dado seu nem nenhum identificador do seu dispositivo.</p>
+
+<h3>Endereço IP</h3>
+<p>Como em qualquer aplicação que se liga à internet, os servidores com que a aplicação comunica recebem o seu endereço IP. Acontece com o Open Food Facts (fichas de produto, pesquisas e imagens) e com a Google (publicidade, leitura de códigos e rótulos, avaliações e, se estiver configurada, a configuração remota). Esta aplicação não tem servidores próprios e não guarda nenhum registo.</p>
+<p>A Google pode usar esse IP para estimar uma <strong>localização aproximada</strong>, ao nível de uma cidade ou de uma região, com a qual escolhe e mede os anúncios e previne fraudes. É a única localização que intervém, e a aplicação não a conhece nem a usa.</p>
+
+<h3>Publicidade: Google AdMob</h3>
+<p>A aplicação inclui o SDK de publicidade da Google (AdMob) e, por isso, declara a autorização <code>com.google.android.gms.permission.AD_ID</code>, que dá acesso ao ID de publicidade do Android. Este ID pode ser reposto e eliminado em <em>Definições do Android → Google → Anúncios</em>.</p>
+<p>Além do ID de publicidade, o SDK do AdMob recolhe o identificador do conjunto de aplicações (<em>app set ID</em>), as interações com a aplicação e com os anúncios (quando a aplicação é aberta, os toques e as reproduções de vídeo) e dados de diagnóstico (tempo de arranque, bloqueios e consumo de energia). A Google usa-os para servir e medir a publicidade, para estatísticas e para prevenir fraudes, segundo a sua própria política, indicada em «Terceiros envolvidos».</p>
+<p>Nos países do Espaço Económico Europeu, no Reino Unido e na Suíça, a aplicação mostra o formulário de consentimento da Google (UMP) antes de servir publicidade personalizada. Pode alterar a sua escolha quando quiser em Mais → Privacidade dos anúncios.</p>
+<p>A mensagem de consentimento dos anúncios é mostrada pela Google com um texto comum a todos os seus parceiros publicitários, e por isso menciona a geolocalização precisa. Segundo a Google, o seu SDK de anúncios só usa a localização aproximada deduzida do endereço IP, e esta aplicação não lhe passa a localização do GPS. Pode recusar essa utilização em «Gerir opções».</p>
+<p><strong>As suas alergias nunca chegam à publicidade.</strong> O pedido de anúncio sai sem nenhum dado do perfil, do produto lido nem do resultado. Se recusar o consentimento, verá publicidade não personalizada e a aplicação funcionará exatamente da mesma forma: nenhuma função fica bloqueada.</p>
+
+<h3>Leitura de códigos e rótulos: Google ML Kit</h3>
+<p>O leitor do código de barras e o da lista de ingredientes funcionam no telemóvel com o <strong>ML Kit</strong>, uma biblioteca da Google incluída na aplicação. <strong>Nem as imagens nem o texto lido saem do telemóvel.</strong> O que o ML Kit envia à Google são dados técnicos do seu funcionamento: marca, modelo e versão do sistema do telemóvel, versão da aplicação, um identificador aleatório da instalação (que, segundo a Google, não se destina a identificá-lo a si nem ao seu telemóvel), tempos de resposta e códigos de erro. A Google usa-os para diagnosticar e melhorar essa biblioteca, e declara que não os cede a terceiros.</p>
+
+<h3>Avaliar a aplicação: Google Play</h3>
+<p>Se tocar em «Avaliar a app», ou se o Google Play lhe propuser avaliá-la, a avaliação faz-se numa janela do Google Play, com a sua conta e as condições da Google. A aplicação não vê nem guarda a classificação nem o que escrever.</p>
+
+<h2>Terceiros envolvidos</h2>
+<table>
+  <tr><th>Serviço</th><th>Para quê</th><th>A sua política</th></tr>
+  <tr>
+    <td>Open Food Facts</td>
+    <td>Fichas de produto, pesquisas e imagens</td>
+    <td><a href="https://world.openfoodfacts.org/privacy">world.openfoodfacts.org/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Publicidade e formulário de consentimento</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google ML Kit</td>
+    <td>Ler o código de barras e o texto dos rótulos no telemóvel; só envia dados técnicos do seu funcionamento</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google Firebase Remote Config</td>
+    <td>Ajustar os espaços de publicidade sem publicar uma nova versão (opcional)</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
+  </tr>
+</table>
+<p>Os dados de produto provêm do Open Food Facts e são publicados com a licença <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>. As fotografias dos produtos são dos colaboradores do Open Food Facts e são publicadas com a licença <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Esta aplicação não está afiliada ao Open Food Facts.</p>
+
+<h2>Fundamento jurídico e conservação</h2>
+<p>As consultas ao Open Food Facts (o código ou o texto que pesquisa) baseiam-se na prestação do serviço que pede ao usar a aplicação (artigo 6.º, n.º 1, alínea b), do RGPD). As suas alergias são tratadas <strong>apenas no seu dispositivo</strong> e sob o seu controlo: não há comunicação a terceiros e o responsável não tem nenhuma cópia. A publicidade personalizada baseia-se no seu <strong>consentimento</strong>, recolhido com o formulário da Google (UMP), que pode retirar quando quiser em Mais → Privacidade dos anúncios. A publicidade não personalizada, a sua medição e a prevenção de fraudes, no <strong>interesse legítimo</strong> de financiar com anúncios uma aplicação gratuita (artigo 6.º, n.º 1, alínea f)); pode opor-se no mesmo sítio.</p>
+<p>Tudo o que a aplicação guarda permanece até a desinstalar ou apagar os seus dados.</p>
+
+<h2>Transferências para fora da Europa</h2>
+<p>A Google LLC (AdMob, ML Kit, Google Play e, se estiver configurada, a configuração remota) pode tratar dados nos Estados Unidos. A Google LLC aderiu ao Quadro de Privacidade de Dados UE-EUA, que a Comissão Europeia declarou adequado em 10 de julho de 2023.</p>
+
+<h2>Os seus direitos</h2>
+<p>Se reside na União Europeia, o RGPD reconhece-lhe os direitos de acesso, retificação, apagamento, limitação, portabilidade e oposição. Na prática, e dado que esta aplicação não guarda nenhum dado associado à sua pessoa:</p>
+<ul>
+  <li><strong>Apagamento:</strong> desinstalar a aplicação, ou apagar os seus dados nas definições do Android, elimina tudo o que guarda. Também pode desmarcar as suas alergias ou limpar o histórico na própria aplicação. O ID de publicidade repõe-se ou elimina-se em <em>Definições do Android → Google → Anúncios</em>. Se usou a versão 1.0.0 com a cópia de segurança da Google ativada, essa cópia apaga-se em <em>Definições do Android → Google → Cópia de segurança</em> ou na sua conta Google.</li>
+  <li><strong>Oposição e retirada do consentimento:</strong> Mais → Privacidade dos anúncios.</li>
+  <li><strong>Acesso:</strong> pode escrever para o endereço de contacto. Tenha em conta que, como não existem contas nem identificadores de utilizador, o responsável não tem nenhum dado «seu» para localizar fora do seu telemóvel. Os dados recolhidos pelas bibliotecas da Google são geridos pela Google, e os direitos sobre eles exercem-se perante a Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
+</ul>
+<p>Pode também apresentar reclamação à autoridade de proteção de dados do seu país (artigo 77.º do RGPD). Em Espanha, é a <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> (Agência Espanhola de Proteção de Dados).</p>
+
+<h2>Residentes nos EUA</h2>
+<p>Se vive num estado dos EUA com lei de privacidade própria (por exemplo, Califórnia, Colorado, Connecticut, Texas ou Virgínia), tem o direito de pedir que os seus dados pessoais não sejam vendidos nem partilhados para publicidade direcionada. Pode fazê-lo na aplicação: Mais → «Privacidade dos anúncios» → «Don't sell or share my data». A partir daí, só verá anúncios não personalizados. A aplicação não envia dados sensíveis a ninguém: as suas alergias, intolerâncias e dietas ficam no seu telemóvel. Para os anúncios, o SDK da Google usa identificadores do dispositivo e uma localização aproximada (ao nível da cidade). Para qualquer outro pedido sobre os seus dados, escreva-nos para <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>Menores</h2>
+<p>Esta aplicação não se destina a menores de 16 anos e não recolhe conscientemente dados deles.</p>
+
+<h2>Alterações a esta política</h2>
+<p>Se esta política mudar de forma substancial, a nova versão será publicada neste mesmo endereço com uma data de atualização diferente.</p>
+
+<h2>Aviso importante sobre o serviço</h2>
+<p>Esta aplicação <strong>não é um dispositivo médico</strong>: não diagnostica, trata, cura nem previne nenhuma doença, nem substitui o conselho do seu médico ou do seu alergologista. A informação provém de uma base de dados colaborativa que pode estar incompleta, desatualizada ou errada, e os fabricantes mudam as receitas sem aviso prévio: <strong>verifique sempre o rótulo da embalagem</strong>. Perante uma reação grave, ligue para o 112.</p>
+
+<footer>
+<p>Comer sin sustos · JR Soft (Javier Román Sáez) · <code>com.jrsoft.nutricional</code> · Contacto: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+</body>
+</html>
